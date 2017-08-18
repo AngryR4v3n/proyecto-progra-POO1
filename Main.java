@@ -60,16 +60,27 @@ public class Main{
            }
 
            if(select==3){
-                System.out.println("Ingrese el nombre del restaurante");
+                System.out.println("Ingrese el nombre del Evento");
                 String nombre = sc.next();
                 System.out.println("Ingresa la direccion");
                 String direccion = sc.next();
-                opera.add
-
-
+                System.our.println("Ingrese la fecha");
+                String fecha = sc.next();
+                System.out.println("Ingrese el tipo ");
+                String tipo = sc.next();
+                opera.addEvento(nombre, direccion, horario, tipo, fecha);
            }
 
+           if(select==4){
+                Sysrem.out.prinln("Ingrese el nombre del departamento");
+                String nombre = sc.next();
+                opera.addD(nombre);
+           }
 
+        }
+
+        if(opcion==2){
+            System.out.prinln("Gracias por utilizar meet 502");
         }
            
         
