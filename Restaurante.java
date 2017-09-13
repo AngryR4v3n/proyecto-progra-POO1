@@ -1,4 +1,4 @@
-/**Esta clase permite la creación de objetos de tipo restaurante
+/**Esta clase permite la creaciÃ³n de objetos de tipo restaurante
 */
 public class Restaurante{
 	private String nombre;
@@ -13,12 +13,12 @@ public class Restaurante{
 	 */
 	
 	public Restaurante() {
-		this.nombre="";
-		this.horario="";
-		this.descripcion="";
-		this.direccion="";
-		this.telefono="";
-		this.calificacion=0.0;
+		nombre="";
+		horario="";
+		descripcion="";
+		direccion="";
+		telefono="";
+		calificacion=0.0;
 	}
 	
 	/** Constructor de restaurantes bajo determinados parametros
