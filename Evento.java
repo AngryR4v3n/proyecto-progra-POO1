@@ -2,7 +2,7 @@
     * Modela las caracteristicas principales para poder realizar y promocionar un evento 
     * 
     
-    @author María Fernanda López, Francisco Molina, Paolo Suchini 
+    @author María Fernanda López, Francisco Molina
     @version 11/08/2017
     
 */
@@ -45,5 +45,7 @@ public class Evento{
 	public String getHorario(){
 		return horario;
 	}
+	
+	
 
 }
