@@ -2,7 +2,7 @@
     * Modela las caracteristicas de un departamento y su actividad turistica
     * 
     
-    @author María Fernanda López, Francisco Molina, Paolo Suchini 
+    @author María Fernanda López, Francisco Molina
     @version 11/08/2017
     
 */
