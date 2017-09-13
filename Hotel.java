@@ -1,5 +1,5 @@
 /**
- * Esta clase permite la creación de objetos de tipo hotel
+ * Esta clase permite la creaciÃ³n de objetos de tipo hotel
 	*/
 public class Hotel {
 	
@@ -16,13 +16,13 @@ public class Hotel {
 		 */
 		
 		public Hotel() {
-			this.nombre="";
-			this.correo="";
-			this.horario="";
-			this.descripcion="";
-			this.direccion="";
-			this.telefono="";
-			this.calificacion=0.0;
+			nombre="";
+			correo="";
+			horario="";
+			descripcion="";
+			direccion="";
+			telefono="";
+			calificacion=0.0;
 		}
 		
 		/** Constructor de hoteles bajo determinados parametros
