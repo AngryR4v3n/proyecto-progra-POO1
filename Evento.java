@@ -14,14 +14,16 @@ public class Evento{
 	private String lugar;
 	private String descripcion; 
 	private String horario; 
+	private String departamento
 
 	//Constructor 
-	public Evento(String nombre, String tipo, String lugar, String descripcion, String horario){
+	public Evento(String nombre, String tipo, String lugar, String descripcion, String horario, String departamento){
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.lugar = lugar;
 		this.descripcion = descripcion;
 		this.horario = horario;
+		this.departamento=departamento;
 	}
 
 	//gets 
@@ -44,6 +46,10 @@ public class Evento{
 
 	public String getHorario(){
 		return horario;
+	}
+	
+	public String getDepartamento(){
+		return departamento;
 	}
 	
 	
