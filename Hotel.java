@@ -10,6 +10,7 @@ public class Hotel {
 		private String direccion;
 		private String telefono;
 		private double calificacion;
+		private String departamento;
 		
 		/**
 		 * El constructor de objetos de tipo Hotel con valores nulos.
@@ -23,6 +24,7 @@ public class Hotel {
 			direccion="";
 			telefono="";
 			calificacion=0.0;
+			departamento="";
 		}
 		
 		/** Constructor de hoteles bajo determinados parametros
@@ -35,7 +37,7 @@ public class Hotel {
 		 * @param telefono: telefono de contacto.
 		 * @param calificacion: calificacion ingresada por el usuario.
 		 */
-		public Hotel(String nombre, String correo, String horario, String descripcion, String direccion, String telefono, double calificacion) {
+		public Hotel(String nombre, String correo, String horario, String descripcion, String direccion, String telefono, double calificacion, String departamento) {
 			this.nombre=nombre;
 			this.correo=correo;
 			this.horario=horario;
@@ -43,6 +45,7 @@ public class Hotel {
 			this.direccion=direccion;
 			this.telefono=telefono;
 			this.calificacion=calificacion;
+			this.departamento=departamento;
 		}
 		/**
 		 * @return: retorna nombre de hotel.
@@ -86,6 +89,9 @@ public class Hotel {
 		public String getDireccion() {
 			return direccion;
 		}
+		public String getDepartamento(){
+			return departamento;
+		}
 		/**
 		 * @return retorna todos los datos del objeto en un string.
 		 */
@@ -93,7 +99,8 @@ public class Hotel {
 			String msj = "Nombre: " + getNombre() + " Direccion: " + getDireccion();
 			String msj2 = "Correo: " + getCorreo() + " Telefono " + getTel();
 			String descrip= "Descripcion: " + getDescripcion();
-			String msjCompleto= msj+ "\n" + msj2+ "\n" + descrip;
+			String direc = "Departamento: " + getDepartamento();
+			String msjCompleto= msj+ "\n" + msj2+ "\n" + descrip+"\n"+direc;
 			return msjCompleto;
 		}
 		public void setCalificacion(double calificacion) {
