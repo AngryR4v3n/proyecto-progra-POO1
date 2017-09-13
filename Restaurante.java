@@ -7,6 +7,7 @@ public class Restaurante{
 	private String direccion;
 	private String telefono;
 	private double calificacion;
+	private String departamento;
 	
 	/**
 	 * El constructor de objetos de tipo Restaurante con valores nulos.
@@ -19,6 +20,7 @@ public class Restaurante{
 		direccion="";
 		telefono="";
 		calificacion=0.0;
+		departamento="";
 	}
 	
 	/** Constructor de restaurantes bajo determinados parametros
@@ -31,13 +33,14 @@ public class Restaurante{
 	 * @param telefono: telefono de contacto.
 	 * @param calificacion: calificacion ingresada por el usuario.
 	 */
-	public Restaurante(String nombre, String horario, String descripcion, String direccion, String telefono, double calificacion) {
+	public Restaurante(String departamento, String nombre, String horario, String descripcion, String direccion, String telefono, double calificacion) {
 		this.nombre=nombre;
 		this.horario=horario;
 		this.descripcion=descripcion;
 		this.direccion=direccion;
 		this.telefono=telefono;
 		this.calificacion=calificacion;
+		this.departamento=departamento;
 	}
 	/**
 	 * @return: retorna direccion de restaurante.
@@ -75,6 +78,11 @@ public class Restaurante{
 	public String getTel() {
 		return telefono;
 	}
+	
+	public String getDepa(){
+		return departamento;
+	}
+	
 	public String toString() {
 		String msj = "Nombre: " + getNombre() + " Direccion: " + getDireccion();
 		String msj2 ="Telefono " + getTel();
