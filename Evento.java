@@ -14,7 +14,7 @@ public class Evento{
 	private String lugar;
 	private String descripcion; 
 	private String horario; 
-	private String departamento
+	private String departamento;
 
 	//Constructor 
 	public Evento(String nombre, String tipo, String lugar, String descripcion, String horario, String departamento){
@@ -51,6 +51,16 @@ public class Evento{
 	public String getDepartamento(){
 		return departamento;
 	}
+        
+        @Override
+        public String toString() {
+			String msj = "Nombre: " + getNombre() + "\nDireccion: " + getLugar();
+			String msj2 = "Tipo: " + getTipo() ;
+			String descrip= "Descripcion: " + getDescripcion() + "\nHorario: " + getHorario();
+			String direc = "Departamento: " + getDepartamento();
+			String msjCompleto= msj+ "\n" + msj2+ "\n" + descrip+"\n"+direc;
+			return msjCompleto;
+		}
 	
 	
 
