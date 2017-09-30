@@ -2,7 +2,7 @@
     * Modela las caracteristicas principales de una actividad turistica
     * 
     
-    @author María Fernanda López, Francisco Molina, Paolo Suchini 
+    @author María Fernanda López, Francisco Molina
     @version 11/08/2017
     
 */
@@ -32,12 +32,26 @@ public class Actividad{
 	public String getTipo(){
 		return tipo;
 	}
-
-	public String getNombre(){
-		return nombre;
-	}
 	
 	public String getDepa(){
 		return departamento;
 	}
+        
+        public String getHorario(){
+            return horario;
+        }
+        
+        public String getDireccion(){
+            return direccion;
+        }
+        
+        @Override
+        public String toString() {
+			String msj = "Nombre: " + getNombre() + "\nDireccion: " + getDireccion();
+			String msj2 = "Tipo: " + getTipo() ;
+			String descrip= "Horario: " + getHorario();
+			String direc = "Departamento: " + getDepa();
+			String msjCompleto= msj+ "\n" + msj2+ "\n" + descrip+"\n"+direc;
+			return msjCompleto;
+		}
 }
